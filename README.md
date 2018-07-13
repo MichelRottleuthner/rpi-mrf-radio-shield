@@ -34,18 +34,19 @@ Below is the bill of materials for equipping the pcb. Obviously you can choose t
 
 | Component identifier      | Part                               | cnt. | Mouser Link                                                                      |
 |---------------------------|------------------------------------|------|----------------------------------------------------------------------------------|
-| J1, J2                    | 1x6 Pin Header 2.54mm pitch female | 2    | [PMV20XNEA](https://www.mouser.com/ds/2/302/PMV20XNEA-1151838.pdf)               |
-| J3, J5                    | 1x8 Pin Header 2.54mm pitch male   | 2    | [855-M20-7820646](https://www.mouser.de/ProductDetail/855-M20-7820646)           |
+| J1, J2                    | 1x6 Pin Header 2.54mm pitch female | 2    | [855-M20-7820646](https://www.mouser.de/ProductDetail/855-M20-7820646)           |
+| J3, J5                    | 1x8 Pin Header 2.54mm pitch male   | 2    | [538-22-28-0080](https://www.mouser.de/ProductDetail/538-22-28-0080)             |
 | J4                        | 1x10 Pin Header 2.54mm pitch male  | 1    | [538-22-28-4102](https://www.mouser.de/ProductDetail/538-22-28-4102)             |
 | J6                        | 1x6 Pin Header 2.54mm pitch male   | 1    | [538-22-28-4062](https://www.mouser.de/ProductDetail/538-22-28-4062)             |
-| J7                        | 2x6 Pin Header 2.54mm pitch male   | 2    | [571-103777-3](https://www.mouser.de/ProductDetail/571-103777-3)                 |
+| J7                        | 2x6 Pin Header 2.54mm pitch male   | 1    | [571-1037776](https://www.mouser.de/ProductDetail/571-1037776)                   |
 | JP1, JP2                  | 1x2 Pin Header 2.54mm pitch male   | 2    | [571-826936-2](https://www.mouser.de/ProductDetail/571-826936-2)                 |
-| -                         | Jumpers for JP1 and JP2            | 2    | [571-826936-2](https://www.mouser.de/ProductDetail/571-826936-2)                 |
-| Q1                        | SOT-23 n-channel MOSFET            | 1    | [151-8010-E](https://www.mouser.de/ProductDetail/151-8010-E)                     |
-| R1, R2                    | 1.5k 0805 SMD resistor             | 2    | [652-CR0805FX-1501ELF](https://www.mouser.de/ProductDetail/652-CR0805FX-1501ELF) |
+| -                         | Jumpers for JP1 and JP2            | 2    | [151-8010-E](https://www.mouser.de/ProductDetail/151-8010-E)                     |
+| Q1                        | SOT-23 n-channel MOSFET            | 1    | [771-PMV20XNEAR](https://www.mouser.de/ProductDetail/771-PMV20XNEAR)             |
+| R1, R2                    | 470R 0805 SMD resistor             | 2    | [652-CR0805FX-4700ELF ](https://www.mouser.de/ProductDetail/652-CR0805FX-1501ELF)|
 | R3                        | 8.2k 0805 SMD resistor             | 1    | [652-CR0805JW-822ELF](https://www.mouser.de/ProductDetail/652-CR0805JW-822ELF)   |
-| R4, R5 (only one needed)  | 47k 0805 SMD resistor              | 1    | [71-CRCW0805-47K-E3](https://www.mouser.de/ProductDetail/71-CRCW0805-47K-E3)     |
-| D_PWR_1, D_PWR_1          | 0805 SMD LED                       | 2    | [604-AP2012EC](https://www.mouser.de/ProductDetail/604-AP2012EC)                 |
+| R4 or R5 (only 1 needed)  | 47k 0805 SMD resistor              | 1    | [71-CRCW0805-47K-E3](https://www.mouser.de/ProductDetail/71-CRCW0805-47K-E3)     |
+| D_PWR_1                   | 0805 SMD LED (red)                 | 1    | [604-AP2012EC](https://www.mouser.de/ProductDetail/604-AP2012EC)                 |
+| D_ACT_1                   | 0805 SMD LED (blue)                | 1    | [710-150080BS75000](https://www.mouser.de/ProductDetail/710-150080BS75000)       |
 
 ---
 ## Configuration
