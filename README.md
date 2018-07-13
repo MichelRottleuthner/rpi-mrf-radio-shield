@@ -71,6 +71,8 @@ Depending on which module you want to use, copy one of the the following blocks 
 **Note:**  Currently RIOT (more specifically it's radio driver(s)) doesn't handle power enable pins for the radios.
 Using RIOT's auto-init feature together with "radio disabled by default" configuration will not work out of the box unless you add the needed power-on functionality to the beginning of the drivers init-function. As an alternative you can also just disable auto_init. This implies that you need to take care of enabling/disabling (and by that also initializing) the radio *manually*, wehen the R4/R5 pull resistors are configured to disable the supply by default.
 
+**Note:**  On some boards the CS pin is shared with an LED and the [board_init](https://github.com/RIOT-OS/RIOT/blob/master/boards/common/nucleo/board.c) may overwrite the pin configuration. In this case you need to disable the initialization of the LED.
+
 #### nucleo-l476rg (and maybe others)
 ##### mrf24j40
 ```
