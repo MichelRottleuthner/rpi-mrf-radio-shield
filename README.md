@@ -31,6 +31,8 @@ As a quick reference this is how the pins are connected:
 ## BOM
 
 Below is the bill of materials for equipping the pcb. Obviously you can choose to use other parts as long as they have the same footprint and properties. For the lazy ones: you may want to look at [this pre-filled shopping cart at Mouser](https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bb2e666ecb) which contains all the parts needed to equip a single PCB.
+The bare PCB can be ordered ad PCBs.io:
+<a href="https://PCBs.io/share/8RMjO"><img src="https://s3.amazonaws.com/pcbs.io/share.png" alt="Order from PCBs.io"></img></a>
 
 | Component identifier      | Part                               | cnt. | Mouser Link                                                                      |
 |---------------------------|------------------------------------|------|----------------------------------------------------------------------------------|
