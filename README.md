@@ -67,9 +67,11 @@ To define your prefered default state of the supply switch you can either fit a 
 ### Using this shield with [RIOT](https://github.com/RIOT-OS/RIOT)
 Depending on which module you want to use, copy one of the the following blocks to your applications Makefile.
 
-**Note:**  Currently RIOT (more specifically it's radio driver(s)) doesn't handle power enable pins for the radios. This implies that you need to take care of enabling/disabling (and by that also initializing) the radio *manually*, wehen the R4/R5 pull resistors are configured to disable the supply by default.
-Using RIOT's auto-init feature together with "radio disabled by default" configuration will not work out of the box unless you add the needed power-on functionality to the beginning of the drivers init-function. As an alternative you can also just disable auto_init.
+**Note:**  Currently RIOT (more specifically it's radio driver(s)) doesn't handle power enable pins for the radios.
+Using RIOT's auto-init feature together with "radio disabled by default" configuration will not work out of the box unless you add the needed power-on functionality to the beginning of the drivers init-function. As an alternative you can also just disable auto_init. This implies that you need to take care of enabling/disabling (and by that also initializing) the radio *manually*, wehen the R4/R5 pull resistors are configured to disable the supply by default.
 
+#### nucleo-l476rg (and maybe others)
+##### mrf24j40
 ```
 USEMODULE += mrf24j40
 CFLAGS += -DMRF24J40_PARAM_SPI=SPI_DEV\(0\)
@@ -81,6 +83,7 @@ CFLAGS += -DMRF24J40_PARAM_RESET=GPIO_PIN\(1,4\)
 CFLAGS += -DRADIO_SUPPLY_SWITCH_PINT=GPIO_PIN\(0,4\)
 ```
 
+##### at86rf2xx
 ```
 USEMODULE += at86rf2xx
 CFLAGS += -DAT86RF2XX_PARAM_SPI=SPI_DEV\(0\)
@@ -93,7 +96,20 @@ CFLAGS += -DAT86RF2XX_PARAM_RESET=GPIO_PIN\(1,4\)
 CFLAGS += -DRADIO_SUPPLY_SWITCH_PINT=GPIO_PIN\(0,4\)
 ```
 
-#### nucleo144-f446ze
+#### nucleo144-f446ze (and maybe others)
+##### mrf24j40
+```
+USEMODULE += mrf24j40
+CFLAGS += -DMRF24J40_PARAM_SPI=SPI_DEV\(0\)
+CFLAGS += -DMRF24J40_PARAM_SPI_CLK=SPI_CLK_5MHZ
+CFLAGS += -DMRF24J40_PARAM_CS=GPIO_PIN\(3,14\)
+CFLAGS += -DMRF24J40_PARAM_INT=GPIO_PIN\(5,13\)
+CFLAGS += -DMRF24J40_PARAM_RESET=GPIO_PIN\(4,11\)
+
+CFLAGS += -DRADIO_SUPPLY_SWITCH_PINT=GPIO_PIN\(0,4\)
+```
+
+##### at86rf2xx
 ```
 USEMODULE += at86rf2xx
 CFLAGS += -DAT86RF2XX_PARAM_SPI=SPI_DEV\(0\)
