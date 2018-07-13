@@ -2,7 +2,7 @@
 
 This simple shield can be used to connect the aforementioned radio modules to STM32 based boards like the [Nucleo-64 family](http://www.st.com/resource/en/user_manual/dm00105823.pdf) or various other boards that come with the well known arduino header.
 
-The main reason for creating this shield is that I need a switch to disconnect the modules from their power supply in order to get rid of small leakage currents that occur even in sleep mode. This is done using a low side n-channel mosfet. Another point is that I need to do this for a few devices and I want them to have a more sturdy connection than the usual (error prone) breadboard and jumper wire tinkerng. Think: plug&play instead of fiddling with loose wires and always looking up pin configurations again.
+The main reason for creating this shield is that I need a switch to disconnect the modules from their power supply in order to get rid of small leakage currents that occur even in sleep mode. This is done using a low side n-channel mosfet. Another point is that I need to do this for a few devices and I want them to have a more sturdy connection than the usual (error prone) breadboard and jumper wire tinkering. Think: plug&play instead of fiddling with loose wires and always looking up pin configurations again.
 
 While tossing together a custom shield, why not add some little features that can be used for demo applications? For this there are two LEDs (D_PWR_1 and D_ACT1) connected to the radio's supply voltage and the CS pin to display if the device is powered and active. This allows to easily visualize duty-cycling applications.
 Keeping in mind the initial purpose (low-power) the LEDs can be disconnected using the jumpers JP1 and JP2.
